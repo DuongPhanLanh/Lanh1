@@ -1,0 +1,27 @@
+
+#include<iostream>
+#include<math.h>
+using namespace std;
+
+struct DonThuc
+{
+	float a;
+	float n;
+	
+};
+void NhapToaDo(DonThuc &d)
+{
+	cout<<"Nhap a: "; cin>> d.a;
+	cout<<"Nhap n: "; cin>> d.n;
+}
+void XuatToaDo(DonThuc d)
+{  
+      cout << "(" << pow(d.a, d.n) <<")";
+}
+int main()
+{
+	DonThuc P;
+	NhapToaDo(P);
+	cout<<"\nDon thuc P la: ";
+	XuatToaDo(P);
+}
